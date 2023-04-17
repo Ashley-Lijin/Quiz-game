@@ -9,6 +9,7 @@ score = 0
 
 # looping the json values
 for key, value in data.items():
+    # printing the question and asking the answer to user
     print(value["question"])
     answer = input('Answer ? ')
 
@@ -24,8 +25,10 @@ for key, value in data.items():
         print('You score is: {} \n'.format(score))
     else:
         print("Wrong :(")
-        print("The answer is : {} \n ".format(value["answer"]))
+        print("The answer is : {} ".format(value["answer"]))
         print('You score is: {} \n'.format(score))
+
+# total number of question correct &  percentage
 
 print('you got {} got 2 questions correctly'.format(score))
 print('Your percentage is {} %'.format(score/2*100))
